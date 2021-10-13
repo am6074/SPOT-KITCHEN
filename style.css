@@ -1,82 +1,215 @@
 html{
-    height: 100%;
+    background-image: linear-gradient(#FC5E55, #FA4083);
+    
+    
 }
 
 body{
-    background-color:#2F2035; 
-    background-image: url(Assets/background-adare-restaurant.jpg);
+    background-image: url(ASSETS/image-lion-background.png);
+    background-position: top center;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header{
-    height: 118px;
-    width: 1024px;
-    text-align: center;
-}
-
-nav{
-    background-color: rgba(0, 0, 0, 0.644);
-    padding-top: 14px;
-    padding-bottom: 14px;
-    width: 1024px;
-    text-align: center;
+    
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 main{
-    height: 400px;
-    text-align: center;
-    padding-top: 80px;
-    padding-left: 240px;
-    padding-right: 240px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+
 }
 
-footer{
-    background-color:rgba(0, 0, 0, 0.5);
-    height: 100px;
-    text-align: center;
-    padding-top: 25px;
+.cards{
+display: flex;
+justify-content: space-between;
+text-align: center;
 }
 
-.box{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1024px;
+.card1{
+    background-color: rgb(31, 31, 31);
+    min-height: 250px;
+    width: 30%;
+    background-image: url(ASSETS/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
-h1{
+.card2{
+    background-color: rgb(77, 75, 75);
+        width: 30%;
+    background-image: url(ASSETS/image-background-card2.jpg);
+    background-position: center;
+}
+
+.card3{
+    background-color: rgb(165, 162, 162);
+        width: 30%;
+    background-image: url(ASSETS/image-background-card3.jpg);
+    background-position: bottom;
+}
+
+.card1, .card2, .card3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(94, 18, 30, 0.719);
+}
+
+.herobox1{
+    flex: 2;
+    padding-right: 100px ;
     
-    font-size: 75px;
-    color: ghostwhite;
-    font-family:Arial, Helvetica, sans-serif
+}
+.herobox2{
+    flex: 1;
+
 }
 
-p{
-    font-size: 18px;
-    color:ghostwhite;
-    font-family: Arial, Helvetica, sans-serif;
+.top{
+    
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav{
+   
+    flex: 2;
+    text-align: right;
+    color: cornsilk;
+    text-decoration: none;
+
 }
 
 a{
-    color: ghostwhite;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
 }
 
-nav a{
-    text-decoration:none ;
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: rgba(248, 248, 255, 0.623);
-
+h1{
+    font-size: 3.25rem;
+    opacity: 80%;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.25rem;
+    text-shadow: 0px 0px 5px rgba(145, 32, 51, 0.603);
 }
 
-footer p{
+h2{
+    font-size: 2rem;
+    opacity: 90%;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.25rem;
+    padding-top: 25px;
 
-    color: rgba(248, 248, 255, 0.596);
-    font-size: smaller;
+}
+p{
+    margin-top: 0.5rem;
+    line-height: 1.75rem;
 }
 
-.map{
-    padding-bottom: 80px;
+.cards p{
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    text-align: center;
+    }
+
+i{
+    font-size: 100px;
+    }
+
+.mybutton{
+    background-color: azure;
+    color:#FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px 11px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 6px;
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px rgba(145, 32, 51, 0.603);
+    transition: 0.5s;
 }
+
+.mybutton:hover{
+    opacity: 1;
+}
+
+.navbutton{
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+    padding: 11px 24px 11px 24px;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.navbutton:hover {
+    background-color: #faa1a1;
+    color: #FA4083;
+  }
+
+
+ .testimonials{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-top: 30px;
+     margin-bottom: 100px;
+ } 
+
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border: 1px solid rgb(255, 191, 191);
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox :last-child{
+    font-size: 00.85rem;
+    padding-left: 25px;
+}
+
+.dropdown{
+    display: none;
+    transition: 0.8s;
+    position: absolute;
+    padding-top: 20px;
+    margin-left: -25px;
+    z-index: 1;
+}
+
+.navbutton:hover .dropdown{
+    display:block;
+    transition: 0.8;
+}
+
+.dropdown .navbutton {
+    width: 110px;
+    background-color: white;
+    border-bottom: 1px soild #FA4083;
+   }
+
+ .dropdown .navbutton a {
+   color:#FA4083;    
+ }
+
+ 
